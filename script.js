@@ -10,7 +10,7 @@ let velocityX = 0, velocityY = 0;
 let snakeBody = [];
 let setIntervalId;
 let score = 0;
-
+ 
 // Getting high score from the local storage
 let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `High Score: ${highScore}`;
@@ -24,7 +24,7 @@ const updateFoodPosition = () => {
 const handleGameOver = () => {
     // Clearing the timer and reloading the page on game over
     clearInterval(setIntervalId);
-    alert("Game Over! Press OK to replay...");
+    alert("Game Over! Refresh page to replay...");
     location.reload();
 }
 
